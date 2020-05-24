@@ -53,9 +53,10 @@ CMAKE_BINARY_DIR = /home/nolv/Workspace/slam-map-reuse/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/FUCKED.dir/all
+all: CMakeFiles/slam_map_reuse.dir/all
 all: CMakeFiles/ICP.dir/all
 all: CMakeFiles/BUFF.dir/all
+all: CMakeFiles/massif_to_txt.dir/all
 
 .PHONY : all
 
@@ -65,38 +66,39 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/FUCKED.dir/clean
+clean: CMakeFiles/slam_map_reuse.dir/clean
 clean: CMakeFiles/ICP.dir/clean
 clean: CMakeFiles/BUFF.dir/clean
+clean: CMakeFiles/massif_to_txt.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/FUCKED.dir
+# Target rules for target CMakeFiles/slam_map_reuse.dir
 
 # All Build rule for target.
-CMakeFiles/FUCKED.dir/all:
-	$(MAKE) -f CMakeFiles/FUCKED.dir/build.make CMakeFiles/FUCKED.dir/depend
-	$(MAKE) -f CMakeFiles/FUCKED.dir/build.make CMakeFiles/FUCKED.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nolv/Workspace/slam-map-reuse/cmake-build-debug/CMakeFiles --progress-num=4,5,6 "Built target FUCKED"
-.PHONY : CMakeFiles/FUCKED.dir/all
+CMakeFiles/slam_map_reuse.dir/all:
+	$(MAKE) -f CMakeFiles/slam_map_reuse.dir/build.make CMakeFiles/slam_map_reuse.dir/depend
+	$(MAKE) -f CMakeFiles/slam_map_reuse.dir/build.make CMakeFiles/slam_map_reuse.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nolv/Workspace/slam-map-reuse/cmake-build-debug/CMakeFiles --progress-num=9,10,11 "Built target slam_map_reuse"
+.PHONY : CMakeFiles/slam_map_reuse.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/FUCKED.dir/rule: cmake_check_build_system
+CMakeFiles/slam_map_reuse.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nolv/Workspace/slam-map-reuse/cmake-build-debug/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/FUCKED.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/slam_map_reuse.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nolv/Workspace/slam-map-reuse/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/FUCKED.dir/rule
+.PHONY : CMakeFiles/slam_map_reuse.dir/rule
 
 # Convenience name for target.
-FUCKED: CMakeFiles/FUCKED.dir/rule
+slam_map_reuse: CMakeFiles/slam_map_reuse.dir/rule
 
-.PHONY : FUCKED
+.PHONY : slam_map_reuse
 
 # clean rule for target.
-CMakeFiles/FUCKED.dir/clean:
-	$(MAKE) -f CMakeFiles/FUCKED.dir/build.make CMakeFiles/FUCKED.dir/clean
-.PHONY : CMakeFiles/FUCKED.dir/clean
+CMakeFiles/slam_map_reuse.dir/clean:
+	$(MAKE) -f CMakeFiles/slam_map_reuse.dir/build.make CMakeFiles/slam_map_reuse.dir/clean
+.PHONY : CMakeFiles/slam_map_reuse.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ICP.dir
@@ -105,7 +107,7 @@ CMakeFiles/FUCKED.dir/clean:
 CMakeFiles/ICP.dir/all:
 	$(MAKE) -f CMakeFiles/ICP.dir/build.make CMakeFiles/ICP.dir/depend
 	$(MAKE) -f CMakeFiles/ICP.dir/build.make CMakeFiles/ICP.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nolv/Workspace/slam-map-reuse/cmake-build-debug/CMakeFiles --progress-num=7,8,9 "Built target ICP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nolv/Workspace/slam-map-reuse/cmake-build-debug/CMakeFiles --progress-num=4,5,6 "Built target ICP"
 .PHONY : CMakeFiles/ICP.dir/all
 
 # Build rule for subdir invocation for target.
@@ -151,6 +153,33 @@ BUFF: CMakeFiles/BUFF.dir/rule
 CMakeFiles/BUFF.dir/clean:
 	$(MAKE) -f CMakeFiles/BUFF.dir/build.make CMakeFiles/BUFF.dir/clean
 .PHONY : CMakeFiles/BUFF.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/massif_to_txt.dir
+
+# All Build rule for target.
+CMakeFiles/massif_to_txt.dir/all:
+	$(MAKE) -f CMakeFiles/massif_to_txt.dir/build.make CMakeFiles/massif_to_txt.dir/depend
+	$(MAKE) -f CMakeFiles/massif_to_txt.dir/build.make CMakeFiles/massif_to_txt.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nolv/Workspace/slam-map-reuse/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target massif_to_txt"
+.PHONY : CMakeFiles/massif_to_txt.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/massif_to_txt.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nolv/Workspace/slam-map-reuse/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/massif_to_txt.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nolv/Workspace/slam-map-reuse/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/massif_to_txt.dir/rule
+
+# Convenience name for target.
+massif_to_txt: CMakeFiles/massif_to_txt.dir/rule
+
+.PHONY : massif_to_txt
+
+# clean rule for target.
+CMakeFiles/massif_to_txt.dir/clean:
+	$(MAKE) -f CMakeFiles/massif_to_txt.dir/build.make CMakeFiles/massif_to_txt.dir/clean
+.PHONY : CMakeFiles/massif_to_txt.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

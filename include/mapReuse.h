@@ -8,13 +8,16 @@
 #include <pcl/keypoints/susan.h>
 
 #include <pcl/features/normal_3d.h>
-
 #include <pcl/features/fpfh.h>
+#include <pcl/features/3dsc.h>
+#include <pcl/features/spin_image.h>
+#include <pcl/features/usc.h>
+#include <pcl/features/shot.h>
 
 #include "Params.h"
 #include <pcl/registration/transformation_estimation_svd.h>
 #include <pcl/registration/correspondence_estimation.h>
-#include <pcl/registration/correspondence_estimation_normal_shooting.h>
+/*#include <pcl/registration/correspondence_estimation_normal_shooting.h>*/
 #include <pcl/registration/correspondence_estimation_backprojection.h>
 #include <pcl/registration/correspondence_rejection_median_distance.h>
 #include <pcl/registration/correspondence_rejection_surface_normal.h>
@@ -69,17 +72,16 @@ public:
                 std::cout << "Something wrong\n";
         }
 
-        inputFeatures = getDescriptors(inputKeys);
+        inputFeatures = descSHOT(inputKeys);
 
-        findCorrespondences();
+        static int i = 0;
+        std::cout << i++ << '\n';
+
+        //findCorrespondences();
 
         //rejectBadCorrespondences();
-        getTransformation();
+        //getTransformation();
         //std::cout << transformation << "\n\n";
-
-        std::cout << '\n' << input->size() << '\n';
-        std::cout << '\n' << inputKeys->size() << '\n';
-
 
         return {};
     }
@@ -165,7 +167,6 @@ public:
         pcl::registration::CorrespondenceEstimation<pcl::FPFHSignature33,pcl::FPFHSignature33> est;
         est.setInputSource (inputFeatures);
         est.setInputTarget (mapFeatures);
-
         est.determineCorrespondences(*allCorresp);
         std::cout << "Break point\n";
     }
@@ -201,7 +202,8 @@ public:
         std::cout << "A\n";
     }
 
-    static pcl::PointCloud<pcl::FPFHSignature33>::Ptr getDescriptors(pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud)
+
+    static pcl::PointCloud<pcl::FPFHSignature33>::Ptr descFPFH(pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud)
     {
         //Normals
         pcl::NormalEstimation<pcl::PointXYZ, pcl::Normal> normal_estimation;
@@ -228,6 +230,95 @@ public:
         return pfh_features;
     }
 
+    static pcl::PointCloud<pcl::FPFHSignature33>::Ptr descSI(pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud)
+   {
+        //Normals
+        pcl::NormalEstimation<pcl::PointXYZ, pcl::Normal> normal_estimation;
+
+        pcl::search::KdTree<pcl::PointXYZ>::Ptr tree (new pcl::search::KdTree<pcl::PointXYZ>);
+        normal_estimation.setSearchMethod (tree);
+        normal_estimation.setRadiusSearch(0.004);
+        normal_estimation.setInputCloud (cloud);
+
+        pcl::PointCloud<pcl::Normal>::Ptr cloud_with_normals (new pcl::PointCloud<pcl::Normal>);
+        normal_estimation.compute (*cloud_with_normals);
+
+       // Setup spin image computation
+       pcl::SpinImageEstimation<pcl::PointXYZ, pcl::Normal, pcl::Histogram<153> > spin_image_descriptor(8, 0.5);
+       spin_image_descriptor.setInputCloud (cloud);
+       spin_image_descriptor.setInputNormals (cloud_with_normals);
+
+       // Use the same KdTree from the normal estimation
+       spin_image_descriptor.setSearchMethod (tree);
+       pcl::PointCloud<pcl::Histogram<153> >::Ptr spin_images (new pcl::PointCloud<pcl::Histogram<153> >);
+       spin_image_descriptor.setRadiusSearch (0.2);
+
+       // Actually compute the spin images
+       spin_image_descriptor.compute (*spin_images);
+
+        return {};
+    }
+
+    static pcl::PointCloud<pcl::FPFHSignature33>::Ptr desc3DSC(pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud)
+    {
+        //Normals
+        pcl::NormalEstimation<pcl::PointXYZ, pcl::Normal> normal_estimation;
+
+        pcl::search::KdTree<pcl::PointXYZ>::Ptr tree (new pcl::search::KdTree<pcl::PointXYZ>);
+        normal_estimation.setSearchMethod (tree);
+        normal_estimation.setRadiusSearch(0.004);
+        normal_estimation.setInputCloud (cloud);
+
+        pcl::PointCloud<pcl::Normal>::Ptr cloud_with_normals (new pcl::PointCloud<pcl::Normal>);
+        normal_estimation.compute (*cloud_with_normals);
+
+        // Setup spin image computation
+        pcl::ShapeContext3DEstimation<pcl::PointXYZ, pcl::Normal> sc_est;
+        sc_est.setInputCloud (cloud);
+        sc_est.setInputNormals (cloud_with_normals);
+
+        // Use the same KdTree from the normal estimation
+        sc_est.setSearchMethod (tree);
+        sc_est.setRadiusSearch (0.2);
+
+        pcl::PointCloud<pcl::ShapeContext1980>::Ptr descriptors(new pcl::PointCloud<pcl::ShapeContext1980>());
+
+        // Actually compute the spin images
+        sc_est.compute (*descriptors);
+
+        return {};
+    }
+
+    static pcl::PointCloud<pcl::FPFHSignature33>::Ptr descSHOT(pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud)
+    {
+        //Normals
+        pcl::NormalEstimation<pcl::PointXYZ, pcl::Normal> normal_estimation;
+
+        pcl::search::KdTree<pcl::PointXYZ>::Ptr tree (new pcl::search::KdTree<pcl::PointXYZ>);
+        normal_estimation.setSearchMethod (tree);
+        normal_estimation.setRadiusSearch(0.004);
+        normal_estimation.setInputCloud (cloud);
+
+        pcl::PointCloud<pcl::Normal>::Ptr cloud_with_normals (new pcl::PointCloud<pcl::Normal>);
+        normal_estimation.compute (*cloud_with_normals);
+
+        // Setup spin image computation
+        pcl::SHOTEstimation<pcl::PointXYZ, pcl::Normal, pcl::SHOT352>
+                feature_estimator;
+
+        feature_estimator.setInputCloud (cloud);
+        feature_estimator.setInputNormals (cloud_with_normals);
+        feature_estimator.setSearchMethod (tree);
+        feature_estimator.setRadiusSearch (0.2);
+
+        pcl::PointCloud<pcl::SHOT352>::Ptr feature (new pcl::PointCloud<pcl::SHOT352>);
+
+        feature_estimator.compute (*feature);
+
+        return {};
+    }
+
+
     /**
      * Sets new map, recalculates descr and keypoints
      * @param m
@@ -236,7 +327,7 @@ public:
     {
         map = m;
         pcl::copyPointCloud(harrisKP(map), *mapKeys);
-        mapFeatures = getDescriptors(mapKeys);
+        mapFeatures = descFPFH(mapKeys);
         std::cout << "Stop point" << '\n';
     }
 

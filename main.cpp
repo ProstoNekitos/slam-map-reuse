@@ -24,14 +24,5 @@ int main (int argc, char** argv)
             return (-1);
         } //"Development of a map reuse method in direct visual odometry algorithms"
         mr.getPosition(part);
-        switch(i)
-        {
-            case 0:
-            case 1000:
-            case 1500:
-            case 1999:
-                mr.visualize();
-
-        }
     }
 }

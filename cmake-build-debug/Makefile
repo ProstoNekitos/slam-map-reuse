@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/nolv/Workspace/slam-map-reuse/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/programms/clion-2020.1/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/local/programms/clion-2020.1/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named FUCKED
+# Target rules for targets named slam_map_reuse
 
 # Build rule for target.
-FUCKED: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 FUCKED
-.PHONY : FUCKED
+slam_map_reuse: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 slam_map_reuse
+.PHONY : slam_map_reuse
 
 # fast build rule for target.
-FUCKED/fast:
-	$(MAKE) -f CMakeFiles/FUCKED.dir/build.make CMakeFiles/FUCKED.dir/build
-.PHONY : FUCKED/fast
+slam_map_reuse/fast:
+	$(MAKE) -f CMakeFiles/slam_map_reuse.dir/build.make CMakeFiles/slam_map_reuse.dir/build
+.PHONY : slam_map_reuse/fast
 
 #=============================================================================
 # Target rules for targets named ICP
@@ -149,6 +149,19 @@ BUFF/fast:
 	$(MAKE) -f CMakeFiles/BUFF.dir/build.make CMakeFiles/BUFF.dir/build
 .PHONY : BUFF/fast
 
+#=============================================================================
+# Target rules for targets named massif_to_txt
+
+# Build rule for target.
+massif_to_txt: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 massif_to_txt
+.PHONY : massif_to_txt
+
+# fast build rule for target.
+massif_to_txt/fast:
+	$(MAKE) -f CMakeFiles/massif_to_txt.dir/build.make CMakeFiles/massif_to_txt.dir/build
+.PHONY : massif_to_txt/fast
+
 buffer.o: buffer.cpp.o
 
 .PHONY : buffer.o
@@ -175,6 +188,33 @@ buffer.s: buffer.cpp.s
 buffer.cpp.s:
 	$(MAKE) -f CMakeFiles/BUFF.dir/build.make CMakeFiles/BUFF.dir/buffer.cpp.s
 .PHONY : buffer.cpp.s
+
+data/descriptors/data_to_txt.o: data/descriptors/data_to_txt.cpp.o
+
+.PHONY : data/descriptors/data_to_txt.o
+
+# target to build an object file
+data/descriptors/data_to_txt.cpp.o:
+	$(MAKE) -f CMakeFiles/massif_to_txt.dir/build.make CMakeFiles/massif_to_txt.dir/data/descriptors/data_to_txt.cpp.o
+.PHONY : data/descriptors/data_to_txt.cpp.o
+
+data/descriptors/data_to_txt.i: data/descriptors/data_to_txt.cpp.i
+
+.PHONY : data/descriptors/data_to_txt.i
+
+# target to preprocess a source file
+data/descriptors/data_to_txt.cpp.i:
+	$(MAKE) -f CMakeFiles/massif_to_txt.dir/build.make CMakeFiles/massif_to_txt.dir/data/descriptors/data_to_txt.cpp.i
+.PHONY : data/descriptors/data_to_txt.cpp.i
+
+data/descriptors/data_to_txt.s: data/descriptors/data_to_txt.cpp.s
+
+.PHONY : data/descriptors/data_to_txt.s
+
+# target to generate assembly for a file
+data/descriptors/data_to_txt.cpp.s:
+	$(MAKE) -f CMakeFiles/massif_to_txt.dir/build.make CMakeFiles/massif_to_txt.dir/data/descriptors/data_to_txt.cpp.s
+.PHONY : data/descriptors/data_to_txt.cpp.s
 
 icp.o: icp.cpp.o
 
@@ -209,7 +249,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/FUCKED.dir/build.make CMakeFiles/FUCKED.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/slam_map_reuse.dir/build.make CMakeFiles/slam_map_reuse.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -218,7 +258,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/FUCKED.dir/build.make CMakeFiles/FUCKED.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/slam_map_reuse.dir/build.make CMakeFiles/slam_map_reuse.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -227,7 +267,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/FUCKED.dir/build.make CMakeFiles/FUCKED.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/slam_map_reuse.dir/build.make CMakeFiles/slam_map_reuse.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 src/mapReuse.o: src/mapReuse.cpp.o
@@ -236,7 +276,7 @@ src/mapReuse.o: src/mapReuse.cpp.o
 
 # target to build an object file
 src/mapReuse.cpp.o:
-	$(MAKE) -f CMakeFiles/FUCKED.dir/build.make CMakeFiles/FUCKED.dir/src/mapReuse.cpp.o
+	$(MAKE) -f CMakeFiles/slam_map_reuse.dir/build.make CMakeFiles/slam_map_reuse.dir/src/mapReuse.cpp.o
 	$(MAKE) -f CMakeFiles/ICP.dir/build.make CMakeFiles/ICP.dir/src/mapReuse.cpp.o
 	$(MAKE) -f CMakeFiles/BUFF.dir/build.make CMakeFiles/BUFF.dir/src/mapReuse.cpp.o
 .PHONY : src/mapReuse.cpp.o
@@ -247,7 +287,7 @@ src/mapReuse.i: src/mapReuse.cpp.i
 
 # target to preprocess a source file
 src/mapReuse.cpp.i:
-	$(MAKE) -f CMakeFiles/FUCKED.dir/build.make CMakeFiles/FUCKED.dir/src/mapReuse.cpp.i
+	$(MAKE) -f CMakeFiles/slam_map_reuse.dir/build.make CMakeFiles/slam_map_reuse.dir/src/mapReuse.cpp.i
 	$(MAKE) -f CMakeFiles/ICP.dir/build.make CMakeFiles/ICP.dir/src/mapReuse.cpp.i
 	$(MAKE) -f CMakeFiles/BUFF.dir/build.make CMakeFiles/BUFF.dir/src/mapReuse.cpp.i
 .PHONY : src/mapReuse.cpp.i
@@ -258,7 +298,7 @@ src/mapReuse.s: src/mapReuse.cpp.s
 
 # target to generate assembly for a file
 src/mapReuse.cpp.s:
-	$(MAKE) -f CMakeFiles/FUCKED.dir/build.make CMakeFiles/FUCKED.dir/src/mapReuse.cpp.s
+	$(MAKE) -f CMakeFiles/slam_map_reuse.dir/build.make CMakeFiles/slam_map_reuse.dir/src/mapReuse.cpp.s
 	$(MAKE) -f CMakeFiles/ICP.dir/build.make CMakeFiles/ICP.dir/src/mapReuse.cpp.s
 	$(MAKE) -f CMakeFiles/BUFF.dir/build.make CMakeFiles/BUFF.dir/src/mapReuse.cpp.s
 .PHONY : src/mapReuse.cpp.s
@@ -269,14 +309,18 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... FUCKED"
+	@echo "... edit_cache"
+	@echo "... slam_map_reuse"
 	@echo "... ICP"
 	@echo "... BUFF"
-	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... massif_to_txt"
 	@echo "... buffer.o"
 	@echo "... buffer.i"
 	@echo "... buffer.s"
+	@echo "... data/descriptors/data_to_txt.o"
+	@echo "... data/descriptors/data_to_txt.i"
+	@echo "... data/descriptors/data_to_txt.s"
 	@echo "... icp.o"
 	@echo "... icp.i"
 	@echo "... icp.s"

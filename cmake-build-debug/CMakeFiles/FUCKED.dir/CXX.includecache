@@ -27,6 +27,8 @@ pcl/features/normal_3d.h
 -
 pcl/features/fpfh.h
 -
+pcl/features/3dsc.h
+-
 Params.h
 ../include/Params.h
 pcl/registration/transformation_estimation_svd.h
@@ -1242,6 +1244,10 @@ pcl/correspondence.h
 pcl/impl/cloud_iterator.hpp
 -
 
+/usr/include/pcl-1.10/pcl/common/angles.h
+pcl/common/impl/angles.hpp
+-
+
 /usr/include/pcl-1.10/pcl/common/centroid.h
 pcl/pcl_macros.h
 -
@@ -1306,6 +1312,12 @@ Eigen/Eigenvalues
 pcl/common/impl/eigen.hpp
 -
 
+/usr/include/pcl-1.10/pcl/common/geometry.h
+Eigen/Core
+-
+pcl/console/print.h
+-
+
 /usr/include/pcl-1.10/pcl/common/impl/accumulators.hpp
 map
 -
@@ -1322,6 +1334,12 @@ boost/fusion/include/filter_if.hpp
 pcl/pcl_macros.h
 -
 pcl/point_types.h
+-
+
+/usr/include/pcl-1.10/pcl/common/impl/angles.hpp
+cmath
+-
+pcl/pcl_macros.h
 -
 
 /usr/include/pcl-1.10/pcl/common/impl/centroid.hpp
@@ -1440,6 +1458,10 @@ pcl/PointIndices.h
 pcl/common/impl/transforms.hpp
 -
 
+/usr/include/pcl-1.10/pcl/common/utils.h
+limits
+-
+
 /usr/include/pcl-1.10/pcl/console/print.h
 cstdio
 -
@@ -1492,6 +1514,22 @@ pcl/pcl_macros.h
 boost/current_function.hpp
 -
 
+/usr/include/pcl-1.10/pcl/features/3dsc.h
+random
+-
+pcl/point_types.h
+-
+pcl/features/boost.h
+-
+pcl/features/feature.h
+-
+pcl/features/impl/3dsc.hpp
+-
+
+/usr/include/pcl-1.10/pcl/features/boost.h
+boost/property_map/property_map.hpp
+-
+
 /usr/include/pcl-1.10/pcl/features/boundary.h
 pcl/features/eigen.h
 -
@@ -1524,6 +1562,18 @@ pcl/features/feature.h
 set
 -
 pcl/features/impl/fpfh.hpp
+-
+
+/usr/include/pcl-1.10/pcl/features/impl/3dsc.hpp
+cmath
+-
+pcl/features/3dsc.h
+-
+pcl/common/utils.h
+-
+pcl/common/geometry.h
+-
+pcl/common/angles.h
 -
 
 /usr/include/pcl-1.10/pcl/features/impl/boundary.hpp

@@ -1,0 +1,1063 @@
+desc: (none)
+cmd: ./slam_map_reuse /home/nolv/data/openvslam/map_raw.pcd /home/nolv/data/openvslam/
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=8120289713
+mem_heap_B=35527627
+mem_heap_extra_B=45613
+mem_stacks_B=0
+heap_tree=peak
+n9: 35527627 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 23038736 0x11F23B: Eigen::internal::aligned_malloc(unsigned long) (Memory.h:159)
+  n1: 13163840 0x1410FA: Eigen::aligned_allocator<pcl::PointXYZI>::allocate(unsigned long, void const*) (Memory.h:758)
+   n1: 13163840 0x13DA93: std::allocator_traits<Eigen::aligned_allocator<pcl::PointXYZI> >::allocate(Eigen::aligned_allocator<pcl::PointXYZI>&, unsigned long) (alloc_traits.h:306)
+    n1: 13163840 0x139661: std::_Vector_base<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::_M_allocate(unsigned long) (stl_vector.h:343)
+     n2: 13163840 0x14FCFA: std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::reserve(unsigned long) (vector.tcc:78)
+      n1: 6581920 0x14E8FA: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::detectKeypoints(pcl::PointCloud<pcl::PointXYZI>&) (harris_3d.hpp:245)
+       n1: 6581920 0x12696E: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:138)
+        n1: 6581920 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+         n1: 6581920 0x1238D4: mapReuse::setMap(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> > const&) (mapReuse.h:329)
+          n0: 6581920 0x11D921: main (main.cpp:17)
+      n1: 6581920 0x14EAE1: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::detectKeypoints(pcl::PointCloud<pcl::PointXYZI>&) (harris_3d.hpp:277)
+       n1: 6581920 0x12696E: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:138)
+        n1: 6581920 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+         n1: 6581920 0x1238D4: mapReuse::setMap(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> > const&) (mapReuse.h:329)
+          n0: 6581920 0x11D921: main (main.cpp:17)
+  n1: 6581920 0x141460: Eigen::aligned_allocator<pcl::Normal>::allocate(unsigned long, void const*) (Memory.h:758)
+   n1: 6581920 0x13E027: std::allocator_traits<Eigen::aligned_allocator<pcl::Normal> >::allocate(Eigen::aligned_allocator<pcl::Normal>&, unsigned long) (alloc_traits.h:306)
+    n1: 6581920 0x139A47: std::_Vector_base<pcl::Normal, Eigen::aligned_allocator<pcl::Normal> >::_M_allocate(unsigned long) (stl_vector.h:343)
+     n1: 6581920 0x1337E7: std::vector<pcl::Normal, Eigen::aligned_allocator<pcl::Normal> >::_M_default_append(unsigned long) (vector.tcc:635)
+      n1: 6581920 0x12D2EC: std::vector<pcl::Normal, Eigen::aligned_allocator<pcl::Normal> >::resize(unsigned long) (stl_vector.h:937)
+       n1: 6581920 0x126E40: pcl::Feature<pcl::PointXYZ, pcl::Normal>::compute(pcl::PointCloud<pcl::Normal>&) (feature.hpp:206)
+        n1: 6581920 0x14E5B8: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:218)
+         n1: 6581920 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+          n1: 6581920 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+           n1: 6581920 0x1238D4: mapReuse::setMap(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> > const&) (mapReuse.h:329)
+            n0: 6581920 0x11D921: main (main.cpp:17)
+  n1: 3290960 0x13EBE6: Eigen::aligned_allocator<pcl::PointXYZ>::allocate(unsigned long, void const*) (Memory.h:758)
+   n1: 3290960 0x13A533: std::allocator_traits<Eigen::aligned_allocator<pcl::PointXYZ> >::allocate(Eigen::aligned_allocator<pcl::PointXYZ>&, unsigned long) (alloc_traits.h:306)
+    n1: 3290960 0x1346F9: std::_Vector_base<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::_M_allocate(unsigned long) (stl_vector.h:343)
+     n1: 3290960 0x12E807: std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::_M_default_append(unsigned long) (vector.tcc:635)
+      n1: 3290960 0x127AF2: std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::resize(unsigned long) (stl_vector.h:937)
+       n1: 3290960 0x12B0DF: void pcl::fromPCLPointCloud2<pcl::PointXYZ>(pcl::PCLPointCloud2 const&, pcl::PointCloud<pcl::PointXYZ>&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > const&) (conversions.h:179)
+        n1: 3290960 0x1259FC: void pcl::fromPCLPointCloud2<pcl::PointXYZ>(pcl::PCLPointCloud2 const&, pcl::PointCloud<pcl::PointXYZ>&) (conversions.h:233)
+         n1: 3290960 0x12E6C0: int pcl::PCDReader::read<pcl::PointXYZ>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, pcl::PointCloud<pcl::PointXYZ>&, int) (pcd_io.h:284)
+          n1: 3290960 0x127A59: int pcl::io::loadPCDFile<pcl::PointXYZ>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, pcl::PointCloud<pcl::PointXYZ>&) (pcd_io.h:652)
+           n0: 3290960 0x11D8BA: main (main.cpp:11)
+  n0: 2016 in 1 place, below massif's threshold (1.00%)
+ n1: 2468220 0x5664BAB: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::convertCloudToArray(pcl::PointCloud<pcl::PointXYZ> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n1: 2468220 0x567767F: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n2: 2468220 0x564C4BE: pcl::search::KdTree<pcl::PointXYZ, pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> > >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n1: 2468220 0x12C5AA: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:62)
+     n1: 2468220 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+      n1: 2468220 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+       n1: 2468220 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+        n1: 2468220 0x1238D4: mapReuse::setMap(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> > const&) (mapReuse.h:329)
+         n0: 2468220 0x11D921: main (main.cpp:17)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2468220 0x5683501: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::buildIndexImpl() (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n1: 2468220 0x5675132: flann::NNIndex<flann::L2_Simple<float> >::buildIndex() (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n1: 2468220 0x5677659: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n2: 2468220 0x564C4BE: pcl::search::KdTree<pcl::PointXYZ, pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> > >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n1: 2468220 0x12C5AA: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:62)
+      n1: 2468220 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+       n1: 2468220 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+        n1: 2468220 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+         n1: 2468220 0x1238D4: mapReuse::setMap(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> > const&) (mapReuse.h:329)
+          n0: 2468220 0x11D921: main (main.cpp:17)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2260992 0x55D4CBE: flann::PooledAllocator::allocateMemory(int) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n3: 2260992 0x567AE6A: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n2: 1138688 0x567B331: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n1: 581632 0x567B331: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n0: 581632 in 2 places, all below massif's threshold (1.00%)
+    n1: 557056 0x567B26F: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n0: 557056 in 2 places, all below massif's threshold (1.00%)
+   n2: 1114112 0x567B26F: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n1: 647168 0x567B331: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n0: 647168 in 2 places, all below massif's threshold (1.00%)
+    n1: 466944 0x567B26F: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n0: 466944 in 2 places, all below massif's threshold (1.00%)
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n2: 1645480 0x51CA4D0: std::vector<int, std::allocator<int> >::_M_default_append(unsigned long) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n2: 822740 0x5655DBC: pcl::PCLBase<pcl::PointXYZ>::initCompute() (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n1: 822740 0x12C479: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:45)
+    n1: 822740 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+     n1: 822740 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+      n1: 822740 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+       n1: 822740 0x1238D4: mapReuse::setMap(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> > const&) (mapReuse.h:329)
+        n0: 822740 0x11D921: main (main.cpp:17)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 822740 0x56835E1: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::buildIndexImpl() (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n1: 822740 0x5675132: flann::NNIndex<flann::L2_Simple<float> >::buildIndex() (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n1: 822740 0x5677659: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n2: 822740 0x564C4BE: pcl::search::KdTree<pcl::PointXYZ, pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> > >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+      n1: 822740 0x12C5AA: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:62)
+       n1: 822740 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+        n1: 822740 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+         n1: 822740 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+          n1: 822740 0x1238D4: mapReuse::setMap(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> > const&) (mapReuse.h:329)
+           n0: 822740 0x11D921: main (main.cpp:17)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1645480 0x55EB2C0: std::vector<float*, std::allocator<float*> >::_M_default_append(unsigned long) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n1: 1645480 0x56752A6: flann::NNIndex<flann::L2_Simple<float> >::setDataset(flann::Matrix<float> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n1: 1645480 0x56765F0: flann::NNIndex<flann::L2_Simple<float> >* flann::create_index_by_type<flann::L2_Simple<float> >(flann::flann_algorithm_t, flann::Matrix<flann::L2_Simple<float>::ElementType> const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, flann::any, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, flann::any> > > const&, flann::L2_Simple<float> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n1: 1645480 0x5676C13: flann::Index<flann::L2_Simple<float> >::Index(flann::Matrix<float> const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, flann::any, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, flann::any> > > const&, flann::L2_Simple<float>) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n1: 1645480 0x56775DD: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+      n2: 1645480 0x564C4BE: pcl::search::KdTree<pcl::PointXYZ, pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> > >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+       n1: 1645480 0x12C5AA: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:62)
+        n1: 1645480 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+         n1: 1645480 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+          n1: 1645480 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+           n1: 1645480 0x1238D4: mapReuse::setMap(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> > const&) (mapReuse.h:329)
+            n0: 1645480 0x11D921: main (main.cpp:17)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 822740 0x137053: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:114)
+  n1: 822740 0x1306EA: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (alloc_traits.h:444)
+   n1: 822740 0x129FE3: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:343)
+    n1: 822740 0x125602: std::vector<int, std::allocator<int> >::reserve(unsigned long) (vector.tcc:78)
+     n1: 822740 0x12C7E1: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:122)
+      n1: 822740 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+       n1: 822740 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+        n1: 822740 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+         n1: 822740 0x1238D4: mapReuse::setMap(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> > const&) (mapReuse.h:329)
+          n0: 822740 0x11D921: main (main.cpp:17)
+ n1: 822740 0x53F594B: std::vector<int, std::allocator<int> >::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n1: 822740 0x5664C06: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::convertCloudToArray(pcl::PointCloud<pcl::PointXYZ> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n1: 822740 0x567767F: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n2: 822740 0x564C4BE: pcl::search::KdTree<pcl::PointXYZ, pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> > >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n1: 822740 0x12C5AA: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:62)
+      n1: 822740 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+       n1: 822740 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+        n1: 822740 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+         n1: 822740 0x1238D4: mapReuse::setMap(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> > const&) (mapReuse.h:329)
+          n0: 822740 0x11D921: main (main.cpp:17)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 355019 in 278 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=2
+#-----------
+time=24402309116
+mem_heap_B=5430243
+mem_heap_extra_B=42605
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=37085028754
+mem_heap_B=5612927
+mem_heap_extra_B=42673
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=58742684145
+mem_heap_B=5320499
+mem_heap_extra_B=42677
+mem_stacks_B=0
+heap_tree=detailed
+n4: 5320499 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 4916388 0x11F23B: Eigen::internal::aligned_malloc(unsigned long) (Memory.h:159)
+  n1: 3726768 0x13EBE6: Eigen::aligned_allocator<pcl::PointXYZ>::allocate(unsigned long, void const*) (Memory.h:758)
+   n1: 3726768 0x13A533: std::allocator_traits<Eigen::aligned_allocator<pcl::PointXYZ> >::allocate(Eigen::aligned_allocator<pcl::PointXYZ>&, unsigned long) (alloc_traits.h:306)
+    n2: 3726768 0x1346F9: std::_Vector_base<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::_M_allocate(unsigned long) (stl_vector.h:343)
+     n1: 3379536 0x12E807: std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::_M_default_append(unsigned long) (vector.tcc:635)
+      n2: 3379536 0x127AF2: std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::resize(unsigned long) (stl_vector.h:937)
+       n1: 3296464 0x12B0DF: void pcl::fromPCLPointCloud2<pcl::PointXYZ>(pcl::PCLPointCloud2 const&, pcl::PointCloud<pcl::PointXYZ>&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > const&) (conversions.h:179)
+        n1: 3296464 0x1259FC: void pcl::fromPCLPointCloud2<pcl::PointXYZ>(pcl::PCLPointCloud2 const&, pcl::PointCloud<pcl::PointXYZ>&) (conversions.h:233)
+         n1: 3296464 0x12E6C0: int pcl::PCDReader::read<pcl::PointXYZ>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, pcl::PointCloud<pcl::PointXYZ>&, int) (pcd_io.h:284)
+          n2: 3296464 0x127A59: int pcl::io::loadPCDFile<pcl::PointXYZ>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, pcl::PointCloud<pcl::PointXYZ>&) (pcd_io.h:652)
+           n0: 3290960 0x11D8BA: main (main.cpp:11)
+           n0: 5504 in 1 place, below massif's threshold (1.00%)
+       n2: 83072 0x126211: void pcl::copyPointCloud<pcl::PointXYZI, pcl::PointXYZ>(pcl::PointCloud<pcl::PointXYZI> const&, pcl::PointCloud<pcl::PointXYZ>&) (io.hpp:128)
+        n1: 76896 0x1238E6: mapReuse::setMap(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> > const&) (mapReuse.h:329)
+         n0: 76896 0x11D921: main (main.cpp:17)
+        n0: 6176 in 1 place, below massif's threshold (1.00%)
+     n1: 347232 0x13CA2C: void std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::_M_range_insert<__gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > > >(__gnu_cxx::__normal_iterator<pcl::PointXYZ*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, std::forward_iterator_tag) (vector.tcc:769)
+      n1: 347232 0x138B76: void std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::_M_insert_dispatch<__gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > > >(__gnu_cxx::__normal_iterator<pcl::PointXYZ*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, std::__false_type) (stl_vector.h:1662)
+       n1: 347232 0x13271B: __gnu_cxx::__normal_iterator<pcl::PointXYZ*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > > std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::insert<__gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, void>(__gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >) (stl_vector.h:1380)
+        n1: 347232 0x12BB28: pcl::PointCloud<pcl::PointXYZ>::concatenate(pcl::PointCloud<pcl::PointXYZ>&, pcl::PointCloud<pcl::PointXYZ> const&) (point_cloud.h:247)
+         n1: 347232 0x12631E: pcl::PointCloud<pcl::PointXYZ>::operator+=(pcl::PointCloud<pcl::PointXYZ> const&) (point_cloud.h:224)
+          n1: 347232 0x122829: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:67)
+           n0: 347232 0x11DA81: main (main.cpp:26)
+  n1: 634392 0x14178A: Eigen::aligned_allocator<pcl::FPFHSignature33>::allocate(unsigned long, void const*) (Memory.h:758)
+   n1: 634392 0x13E511: std::allocator_traits<Eigen::aligned_allocator<pcl::FPFHSignature33> >::allocate(Eigen::aligned_allocator<pcl::FPFHSignature33>&, unsigned long) (alloc_traits.h:306)
+    n1: 634392 0x139DF9: std::_Vector_base<pcl::FPFHSignature33, Eigen::aligned_allocator<pcl::FPFHSignature33> >::_M_allocate(unsigned long) (stl_vector.h:343)
+     n1: 634392 0x133D80: std::vector<pcl::FPFHSignature33, Eigen::aligned_allocator<pcl::FPFHSignature33> >::_M_default_append(unsigned long) (vector.tcc:635)
+      n1: 634392 0x12DB0A: std::vector<pcl::FPFHSignature33, Eigen::aligned_allocator<pcl::FPFHSignature33> >::resize(unsigned long) (stl_vector.h:937)
+       n1: 634392 0x1272C2: pcl::Feature<pcl::PointXYZ, pcl::FPFHSignature33>::compute(pcl::PointCloud<pcl::FPFHSignature33>&) (feature.hpp:206)
+        n1: 634392 0x12316C: mapReuse::descFPFH(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:228)
+         n1: 634392 0x123912: mapReuse::setMap(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> > const&) (mapReuse.h:330)
+          n0: 634392 0x11D921: main (main.cpp:17)
+  n1: 541500 0x141AAD: Eigen::aligned_allocator<pcl::SHOT352>::allocate(unsigned long, void const*) (Memory.h:758)
+   n1: 541500 0x13EA2D: std::allocator_traits<Eigen::aligned_allocator<pcl::SHOT352> >::allocate(Eigen::aligned_allocator<pcl::SHOT352>&, unsigned long) (alloc_traits.h:306)
+    n1: 541500 0x13A3C9: std::_Vector_base<pcl::SHOT352, Eigen::aligned_allocator<pcl::SHOT352> >::_M_allocate(unsigned long) (stl_vector.h:343)
+     n1: 541500 0x1343E4: std::vector<pcl::SHOT352, Eigen::aligned_allocator<pcl::SHOT352> >::_M_default_append(unsigned long) (vector.tcc:635)
+      n1: 541500 0x12E56E: std::vector<pcl::SHOT352, Eigen::aligned_allocator<pcl::SHOT352> >::resize(unsigned long) (stl_vector.h:937)
+       n1: 541500 0x1278DE: pcl::Feature<pcl::PointXYZ, pcl::SHOT352>::compute(pcl::PointCloud<pcl::SHOT352>&) (feature.hpp:206)
+        n1: 541500 0x1236DA: mapReuse::descSHOT(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:316)
+         n1: 541500 0x1228AF: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:75)
+          n0: 541500 0x11DA81: main (main.cpp:26)
+  n0: 13728 in 3 places, all below massif's threshold (1.00%)
+ n0: 209727 in 296 places, all below massif's threshold (1.00%)
+ n1: 121680 0x8E46DC1: __new_exitfn (cxa_atexit.c:114)
+  n1: 121680 0x8E46FA6: __internal_atexit (cxa_atexit.c:44)
+   n1: 121680 0x8E46FA6: __cxa_atexit (cxa_atexit.c:70)
+    n0: 121680 in 71 places, all below massif's threshold (1.00%)
+ n1: 72704 0x8B56C19: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B89: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011C90: call_init (dl-init.c:30)
+    n1: 72704 0x4011C90: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x2: ???
+       n1: 72704 0x1FFF000102: ???
+        n1: 72704 0x1FFF000113: ???
+         n0: 72704 0x1FFF000139: ???
+#-----------
+snapshot=5
+#-----------
+time=75999709459
+mem_heap_B=6400719
+mem_heap_extra_B=42777
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=89832424573
+mem_heap_B=7023919
+mem_heap_extra_B=42753
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=99936631221
+mem_heap_B=6980338
+mem_heap_extra_B=43310
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=120145014068
+mem_heap_B=6365026
+mem_heap_extra_B=43638
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=134740079288
+mem_heap_B=7450782
+mem_heap_extra_B=43282
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=148526112818
+mem_heap_B=7586786
+mem_heap_extra_B=43406
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=160678386771
+mem_heap_B=6680938
+mem_heap_extra_B=43446
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=178038779339
+mem_heap_B=7361751
+mem_heap_extra_B=42801
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=191927402644
+mem_heap_B=8342958
+mem_heap_extra_B=43362
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=211023962338
+mem_heap_B=8021055
+mem_heap_extra_B=42905
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=224912272978
+mem_heap_B=6109347
+mem_heap_extra_B=42957
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=237367786321
+mem_heap_B=8187855
+mem_heap_extra_B=42857
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=246711101135
+mem_heap_B=8792838
+mem_heap_extra_B=43410
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=262280587548
+mem_heap_B=7655290
+mem_heap_extra_B=43574
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=274736094938
+mem_heap_B=8316155
+mem_heap_extra_B=42805
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=287191595134
+mem_heap_B=8389071
+mem_heap_extra_B=42961
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=296533221070
+mem_heap_B=8467455
+mem_heap_extra_B=42945
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=308988725257
+mem_heap_B=8544391
+mem_heap_extra_B=42913
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=318330356165
+mem_heap_B=9549983
+mem_heap_extra_B=42969
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=330785858385
+mem_heap_B=9383230
+mem_heap_extra_B=43538
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=340127827830
+mem_heap_B=7836714
+mem_heap_extra_B=43398
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=355697216365
+mem_heap_B=8786247
+mem_heap_extra_B=42937
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=371266595375
+mem_heap_B=9590342
+mem_heap_extra_B=43642
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=380608223413
+mem_heap_B=9629898
+mem_heap_extra_B=43670
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=395220631053
+mem_heap_B=9727874
+mem_heap_extra_B=43662
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=413484370054
+mem_heap_B=10095935
+mem_heap_extra_B=42937
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=426268501418
+mem_heap_B=9931266
+mem_heap_extra_B=43694
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=436925986613
+mem_heap_B=9206335
+mem_heap_extra_B=43009
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=448765750565
+mem_heap_B=6630043
+mem_heap_extra_B=42573
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=465341053319
+mem_heap_B=9338639
+mem_heap_extra_B=42961
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=478364491906
+mem_heap_B=9370551
+mem_heap_extra_B=43025
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=496130887879
+mem_heap_B=9493007
+mem_heap_extra_B=42977
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=517456161502
+mem_heap_B=9594607
+mem_heap_extra_B=43033
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=534044444140
+mem_heap_B=10566454
+mem_heap_extra_B=43714
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=555303863968
+mem_heap_B=5308521
+mem_heap_extra_B=42935
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=568549827257
+mem_heap_B=9897407
+mem_heap_extra_B=42985
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=584446130713
+mem_heap_B=9963823
+mem_heap_extra_B=43065
+mem_stacks_B=0
+heap_tree=detailed
+n10: 9963823 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n5: 7253400 0x11F23B: Eigen::internal::aligned_malloc(unsigned long) (Memory.h:159)
+  n1: 4091824 0x13EBE6: Eigen::aligned_allocator<pcl::PointXYZ>::allocate(unsigned long, void const*) (Memory.h:758)
+   n1: 4091824 0x13A533: std::allocator_traits<Eigen::aligned_allocator<pcl::PointXYZ> >::allocate(Eigen::aligned_allocator<pcl::PointXYZ>&, unsigned long) (alloc_traits.h:306)
+    n2: 4091824 0x1346F9: std::_Vector_base<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::_M_allocate(unsigned long) (stl_vector.h:343)
+     n1: 3397616 0x12E807: std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::_M_default_append(unsigned long) (vector.tcc:635)
+      n2: 3397616 0x127AF2: std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::resize(unsigned long) (stl_vector.h:937)
+       n1: 3296464 0x12B0DF: void pcl::fromPCLPointCloud2<pcl::PointXYZ>(pcl::PCLPointCloud2 const&, pcl::PointCloud<pcl::PointXYZ>&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > const&) (conversions.h:179)
+        n1: 3296464 0x1259FC: void pcl::fromPCLPointCloud2<pcl::PointXYZ>(pcl::PCLPointCloud2 const&, pcl::PointCloud<pcl::PointXYZ>&) (conversions.h:233)
+         n1: 3296464 0x12E6C0: int pcl::PCDReader::read<pcl::PointXYZ>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, pcl::PointCloud<pcl::PointXYZ>&, int) (pcd_io.h:284)
+          n2: 3296464 0x127A59: int pcl::io::loadPCDFile<pcl::PointXYZ>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, pcl::PointCloud<pcl::PointXYZ>&) (pcd_io.h:652)
+           n0: 3290960 0x11D8BA: main (main.cpp:11)
+           n0: 5504 in 1 place, below massif's threshold (1.00%)
+       n1: 101152 0x126211: void pcl::copyPointCloud<pcl::PointXYZI, pcl::PointXYZ>(pcl::PointCloud<pcl::PointXYZI> const&, pcl::PointCloud<pcl::PointXYZ>&) (io.hpp:128)
+        n0: 101152 in 2 places, all below massif's threshold (1.00%)
+     n1: 694208 0x13CA2C: void std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::_M_range_insert<__gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > > >(__gnu_cxx::__normal_iterator<pcl::PointXYZ*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, std::forward_iterator_tag) (vector.tcc:769)
+      n1: 694208 0x138B76: void std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::_M_insert_dispatch<__gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > > >(__gnu_cxx::__normal_iterator<pcl::PointXYZ*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, std::__false_type) (stl_vector.h:1662)
+       n1: 694208 0x13271B: __gnu_cxx::__normal_iterator<pcl::PointXYZ*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > > std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::insert<__gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, void>(__gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >) (stl_vector.h:1380)
+        n1: 694208 0x12BB28: pcl::PointCloud<pcl::PointXYZ>::concatenate(pcl::PointCloud<pcl::PointXYZ>&, pcl::PointCloud<pcl::PointXYZ> const&) (point_cloud.h:247)
+         n1: 694208 0x12631E: pcl::PointCloud<pcl::PointXYZ>::operator+=(pcl::PointCloud<pcl::PointXYZ> const&) (point_cloud.h:224)
+          n1: 694208 0x122829: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:67)
+           n0: 694208 0x11DA81: main (main.cpp:26)
+  n1: 1262656 0x1410FA: Eigen::aligned_allocator<pcl::PointXYZI>::allocate(unsigned long, void const*) (Memory.h:758)
+   n1: 1262656 0x13DA93: std::allocator_traits<Eigen::aligned_allocator<pcl::PointXYZI> >::allocate(Eigen::aligned_allocator<pcl::PointXYZI>&, unsigned long) (alloc_traits.h:306)
+    n2: 1262656 0x139661: std::_Vector_base<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::_M_allocate(unsigned long) (stl_vector.h:343)
+     n2: 1262656 0x14FCFA: std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::reserve(unsigned long) (vector.tcc:78)
+      n1: 1262656 0x14E8FA: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::detectKeypoints(pcl::PointCloud<pcl::PointXYZI>&) (harris_3d.hpp:245)
+       n1: 1262656 0x12696E: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:138)
+        n2: 1262656 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+         n1: 1262656 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+          n0: 1262656 0x11DA81: main (main.cpp:26)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 1262656 0x141460: Eigen::aligned_allocator<pcl::Normal>::allocate(unsigned long, void const*) (Memory.h:758)
+   n1: 1262656 0x13E027: std::allocator_traits<Eigen::aligned_allocator<pcl::Normal> >::allocate(Eigen::aligned_allocator<pcl::Normal>&, unsigned long) (alloc_traits.h:306)
+    n1: 1262656 0x139A47: std::_Vector_base<pcl::Normal, Eigen::aligned_allocator<pcl::Normal> >::_M_allocate(unsigned long) (stl_vector.h:343)
+     n1: 1262656 0x1337E7: std::vector<pcl::Normal, Eigen::aligned_allocator<pcl::Normal> >::_M_default_append(unsigned long) (vector.tcc:635)
+      n1: 1262656 0x12D2EC: std::vector<pcl::Normal, Eigen::aligned_allocator<pcl::Normal> >::resize(unsigned long) (stl_vector.h:937)
+       n2: 1262656 0x126E40: pcl::Feature<pcl::PointXYZ, pcl::Normal>::compute(pcl::PointCloud<pcl::Normal>&) (feature.hpp:206)
+        n1: 1262656 0x14E5B8: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:218)
+         n1: 1262656 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+          n2: 1262656 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+           n1: 1262656 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+            n0: 1262656 0x11DA81: main (main.cpp:26)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n1: 634392 0x14178A: Eigen::aligned_allocator<pcl::FPFHSignature33>::allocate(unsigned long, void const*) (Memory.h:758)
+   n1: 634392 0x13E511: std::allocator_traits<Eigen::aligned_allocator<pcl::FPFHSignature33> >::allocate(Eigen::aligned_allocator<pcl::FPFHSignature33>&, unsigned long) (alloc_traits.h:306)
+    n1: 634392 0x139DF9: std::_Vector_base<pcl::FPFHSignature33, Eigen::aligned_allocator<pcl::FPFHSignature33> >::_M_allocate(unsigned long) (stl_vector.h:343)
+     n1: 634392 0x133D80: std::vector<pcl::FPFHSignature33, Eigen::aligned_allocator<pcl::FPFHSignature33> >::_M_default_append(unsigned long) (vector.tcc:635)
+      n1: 634392 0x12DB0A: std::vector<pcl::FPFHSignature33, Eigen::aligned_allocator<pcl::FPFHSignature33> >::resize(unsigned long) (stl_vector.h:937)
+       n1: 634392 0x1272C2: pcl::Feature<pcl::PointXYZ, pcl::FPFHSignature33>::compute(pcl::PointCloud<pcl::FPFHSignature33>&) (feature.hpp:206)
+        n1: 634392 0x12316C: mapReuse::descFPFH(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:228)
+         n1: 634392 0x123912: mapReuse::setMap(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> > const&) (mapReuse.h:330)
+          n0: 634392 0x11D921: main (main.cpp:17)
+  n0: 1872 in 2 places, all below massif's threshold (1.00%)
+ n1: 473496 0x5664BAB: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::convertCloudToArray(pcl::PointCloud<pcl::PointXYZ> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n1: 473496 0x567767F: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n2: 473496 0x564C4BE: pcl::search::KdTree<pcl::PointXYZ, pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> > >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n1: 473496 0x12C5AA: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:62)
+     n1: 473496 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+      n1: 473496 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+       n2: 473496 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+        n1: 473496 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+         n0: 473496 0x11DA81: main (main.cpp:26)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 473496 0x5683501: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::buildIndexImpl() (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n1: 473496 0x5675132: flann::NNIndex<flann::L2_Simple<float> >::buildIndex() (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n1: 473496 0x5677659: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n2: 473496 0x564C4BE: pcl::search::KdTree<pcl::PointXYZ, pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> > >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n1: 473496 0x12C5AA: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:62)
+      n1: 473496 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+       n1: 473496 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+        n2: 473496 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+         n1: 473496 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+          n0: 473496 0x11DA81: main (main.cpp:26)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 442368 0x55D4CBE: flann::PooledAllocator::allocateMemory(int) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n3: 442368 0x567AE6A: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n2: 221184 0x567B26F: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n1: 147456 0x567B26F: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n0: 147456 in 2 places, all below massif's threshold (1.00%)
+    n0: 73728 in 1 place, below massif's threshold (1.00%)
+   n2: 212992 0x567B331: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n1: 114688 0x567B26F: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n0: 114688 in 2 places, all below massif's threshold (1.00%)
+    n0: 98304 in 2 places, all below massif's threshold (1.00%)
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n2: 315664 0x51CA4D0: std::vector<int, std::allocator<int> >::_M_default_append(unsigned long) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n2: 157832 0x5655DBC: pcl::PCLBase<pcl::PointXYZ>::initCompute() (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n1: 157832 0x12C479: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:45)
+    n1: 157832 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+     n1: 157832 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+      n2: 157832 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+       n1: 157832 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+        n0: 157832 0x11DA81: main (main.cpp:26)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 3 places, all below massif's threshold (1.00%)
+  n1: 157832 0x56835E1: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::buildIndexImpl() (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n1: 157832 0x5675132: flann::NNIndex<flann::L2_Simple<float> >::buildIndex() (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n1: 157832 0x5677659: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n2: 157832 0x564C4BE: pcl::search::KdTree<pcl::PointXYZ, pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> > >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+      n1: 157832 0x12C5AA: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:62)
+       n1: 157832 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+        n1: 157832 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+         n2: 157832 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+          n1: 157832 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+           n0: 157832 0x11DA81: main (main.cpp:26)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+      n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 315664 0x55EB2C0: std::vector<float*, std::allocator<float*> >::_M_default_append(unsigned long) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n1: 315664 0x56752A6: flann::NNIndex<flann::L2_Simple<float> >::setDataset(flann::Matrix<float> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n1: 315664 0x56765F0: flann::NNIndex<flann::L2_Simple<float> >* flann::create_index_by_type<flann::L2_Simple<float> >(flann::flann_algorithm_t, flann::Matrix<flann::L2_Simple<float>::ElementType> const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, flann::any, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, flann::any> > > const&, flann::L2_Simple<float> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n1: 315664 0x5676C13: flann::Index<flann::L2_Simple<float> >::Index(flann::Matrix<float> const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, flann::any, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, flann::any> > > const&, flann::L2_Simple<float>) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n1: 315664 0x56775DD: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+      n2: 315664 0x564C4BE: pcl::search::KdTree<pcl::PointXYZ, pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> > >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+       n1: 315664 0x12C5AA: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:62)
+        n1: 315664 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+         n1: 315664 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+          n2: 315664 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+           n1: 315664 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+            n0: 315664 0x11DA81: main (main.cpp:26)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+       n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 252391 in 290 places, all below massif's threshold (1.00%)
+ n1: 157832 0x137053: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:114)
+  n1: 157832 0x1306EA: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (alloc_traits.h:444)
+   n1: 157832 0x129FE3: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:343)
+    n1: 157832 0x125602: std::vector<int, std::allocator<int> >::reserve(unsigned long) (vector.tcc:78)
+     n1: 157832 0x12C7E1: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:122)
+      n1: 157832 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+       n1: 157832 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+        n2: 157832 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+         n1: 157832 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+          n0: 157832 0x11DA81: main (main.cpp:26)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 157832 0x53F594B: std::vector<int, std::allocator<int> >::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n1: 157832 0x5664C06: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::convertCloudToArray(pcl::PointCloud<pcl::PointXYZ> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n1: 157832 0x567767F: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n2: 157832 0x564C4BE: pcl::search::KdTree<pcl::PointXYZ, pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> > >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n1: 157832 0x12C5AA: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:62)
+      n1: 157832 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+       n1: 157832 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+        n2: 157832 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+         n1: 157832 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+          n0: 157832 0x11DA81: main (main.cpp:26)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 121680 0x8E46DC1: __new_exitfn (cxa_atexit.c:114)
+  n1: 121680 0x8E46FA6: __internal_atexit (cxa_atexit.c:44)
+   n1: 121680 0x8E46FA6: __cxa_atexit (cxa_atexit.c:70)
+    n0: 121680 in 71 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=42
+#-----------
+time=595042904076
+mem_heap_B=9975139
+mem_heap_extra_B=42933
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=608290197676
+mem_heap_B=6371987
+mem_heap_extra_B=42429
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=629485477473
+mem_heap_B=10062295
+mem_heap_extra_B=43025
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=645380635059
+mem_heap_B=5302457
+mem_heap_extra_B=43039
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=663925024793
+mem_heap_B=6826499
+mem_heap_extra_B=43013
+mem_stacks_B=0
+heap_tree=detailed
+n9: 6826499 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 4727800 0x11F23B: Eigen::internal::aligned_malloc(unsigned long) (Memory.h:159)
+  n1: 4091824 0x13EBE6: Eigen::aligned_allocator<pcl::PointXYZ>::allocate(unsigned long, void const*) (Memory.h:758)
+   n1: 4091824 0x13A533: std::allocator_traits<Eigen::aligned_allocator<pcl::PointXYZ> >::allocate(Eigen::aligned_allocator<pcl::PointXYZ>&, unsigned long) (alloc_traits.h:306)
+    n2: 4091824 0x1346F9: std::_Vector_base<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::_M_allocate(unsigned long) (stl_vector.h:343)
+     n1: 3397616 0x12E807: std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::_M_default_append(unsigned long) (vector.tcc:635)
+      n2: 3397616 0x127AF2: std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::resize(unsigned long) (stl_vector.h:937)
+       n1: 3296464 0x12B0DF: void pcl::fromPCLPointCloud2<pcl::PointXYZ>(pcl::PCLPointCloud2 const&, pcl::PointCloud<pcl::PointXYZ>&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > const&) (conversions.h:179)
+        n1: 3296464 0x1259FC: void pcl::fromPCLPointCloud2<pcl::PointXYZ>(pcl::PCLPointCloud2 const&, pcl::PointCloud<pcl::PointXYZ>&) (conversions.h:233)
+         n1: 3296464 0x12E6C0: int pcl::PCDReader::read<pcl::PointXYZ>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, pcl::PointCloud<pcl::PointXYZ>&, int) (pcd_io.h:284)
+          n2: 3296464 0x127A59: int pcl::io::loadPCDFile<pcl::PointXYZ>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, pcl::PointCloud<pcl::PointXYZ>&) (pcd_io.h:652)
+           n0: 3290960 0x11D8BA: main (main.cpp:11)
+           n0: 5504 in 1 place, below massif's threshold (1.00%)
+       n2: 101152 0x126211: void pcl::copyPointCloud<pcl::PointXYZI, pcl::PointXYZ>(pcl::PointCloud<pcl::PointXYZI> const&, pcl::PointCloud<pcl::PointXYZ>&) (io.hpp:128)
+        n1: 76896 0x1238E6: mapReuse::setMap(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> > const&) (mapReuse.h:329)
+         n0: 76896 0x11D921: main (main.cpp:17)
+        n0: 24256 in 1 place, below massif's threshold (1.00%)
+     n1: 694208 0x13CA2C: void std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::_M_range_insert<__gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > > >(__gnu_cxx::__normal_iterator<pcl::PointXYZ*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, std::forward_iterator_tag) (vector.tcc:769)
+      n1: 694208 0x138B76: void std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::_M_insert_dispatch<__gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > > >(__gnu_cxx::__normal_iterator<pcl::PointXYZ*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, std::__false_type) (stl_vector.h:1662)
+       n1: 694208 0x13271B: __gnu_cxx::__normal_iterator<pcl::PointXYZ*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > > std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::insert<__gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, void>(__gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >) (stl_vector.h:1380)
+        n1: 694208 0x12BB28: pcl::PointCloud<pcl::PointXYZ>::concatenate(pcl::PointCloud<pcl::PointXYZ>&, pcl::PointCloud<pcl::PointXYZ> const&) (point_cloud.h:247)
+         n1: 694208 0x12631E: pcl::PointCloud<pcl::PointXYZ>::operator+=(pcl::PointCloud<pcl::PointXYZ> const&) (point_cloud.h:224)
+          n1: 694208 0x122829: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:67)
+           n0: 694208 0x11DA81: main (main.cpp:26)
+  n1: 634392 0x14178A: Eigen::aligned_allocator<pcl::FPFHSignature33>::allocate(unsigned long, void const*) (Memory.h:758)
+   n1: 634392 0x13E511: std::allocator_traits<Eigen::aligned_allocator<pcl::FPFHSignature33> >::allocate(Eigen::aligned_allocator<pcl::FPFHSignature33>&, unsigned long) (alloc_traits.h:306)
+    n1: 634392 0x139DF9: std::_Vector_base<pcl::FPFHSignature33, Eigen::aligned_allocator<pcl::FPFHSignature33> >::_M_allocate(unsigned long) (stl_vector.h:343)
+     n1: 634392 0x133D80: std::vector<pcl::FPFHSignature33, Eigen::aligned_allocator<pcl::FPFHSignature33> >::_M_default_append(unsigned long) (vector.tcc:635)
+      n1: 634392 0x12DB0A: std::vector<pcl::FPFHSignature33, Eigen::aligned_allocator<pcl::FPFHSignature33> >::resize(unsigned long) (stl_vector.h:937)
+       n1: 634392 0x1272C2: pcl::Feature<pcl::PointXYZ, pcl::FPFHSignature33>::compute(pcl::PointCloud<pcl::FPFHSignature33>&) (feature.hpp:206)
+        n1: 634392 0x12316C: mapReuse::descFPFH(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:228)
+         n1: 634392 0x123912: mapReuse::setMap(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> > const&) (mapReuse.h:330)
+          n0: 634392 0x11D921: main (main.cpp:17)
+  n0: 1584 in 4 places, all below massif's threshold (1.00%)
+ n1: 493716 0x5664BAB: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::convertCloudToArray(pcl::PointCloud<pcl::PointXYZ> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n1: 493716 0x567767F: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n2: 493716 0x564C4BE: pcl::search::KdTree<pcl::PointXYZ, pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> > >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n1: 493716 0x12C5AA: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:62)
+     n1: 493716 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+      n1: 493716 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+       n2: 493716 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+        n1: 493716 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+         n0: 493716 0x11DA81: main (main.cpp:26)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 425984 0x55D4CBE: flann::PooledAllocator::allocateMemory(int) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n3: 425984 0x567AE6A: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n3: 303104 0x567B331: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n2: 172032 0x567B26F: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n1: 90112 0x567B331: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+      n0: 90112 in 2 places, all below massif's threshold (1.00%)
+     n1: 81920 0x567B26F: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+      n0: 81920 in 3 places, all below massif's threshold (1.00%)
+    n2: 122880 0x567B331: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n1: 73728 0x567B26F: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+      n0: 73728 in 2 places, all below massif's threshold (1.00%)
+     n0: 49152 in 2 places, all below massif's threshold (1.00%)
+    n0: 8192 in 1 place, below massif's threshold (1.00%)
+   n2: 114688 0x567B26F: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n1: 90112 0x567B26F: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n0: 90112 in 2 places, all below massif's threshold (1.00%)
+    n0: 24576 in 1 place, below massif's threshold (1.00%)
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n2: 329144 0x51CA4D0: std::vector<int, std::allocator<int> >::_M_default_append(unsigned long) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n2: 164572 0x5655DBC: pcl::PCLBase<pcl::PointXYZ>::initCompute() (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n1: 164572 0x12C479: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:45)
+    n1: 164572 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+     n1: 164572 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+      n2: 164572 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+       n1: 164572 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+        n0: 164572 0x11DA81: main (main.cpp:26)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 3 places, all below massif's threshold (1.00%)
+  n1: 164572 0x56835E1: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::buildIndexImpl() (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n1: 164572 0x5675132: flann::NNIndex<flann::L2_Simple<float> >::buildIndex() (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n1: 164572 0x5677659: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n2: 164572 0x564C4BE: pcl::search::KdTree<pcl::PointXYZ, pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> > >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+      n1: 164572 0x12C5AA: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:62)
+       n1: 164572 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+        n1: 164572 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+         n2: 164572 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+          n1: 164572 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+           n0: 164572 0x11DA81: main (main.cpp:26)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+      n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 329144 0x55EB2C0: std::vector<float*, std::allocator<float*> >::_M_default_append(unsigned long) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n1: 329144 0x56752A6: flann::NNIndex<flann::L2_Simple<float> >::setDataset(flann::Matrix<float> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n1: 329144 0x56765F0: flann::NNIndex<flann::L2_Simple<float> >* flann::create_index_by_type<flann::L2_Simple<float> >(flann::flann_algorithm_t, flann::Matrix<flann::L2_Simple<float>::ElementType> const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, flann::any, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, flann::any> > > const&, flann::L2_Simple<float> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n1: 329144 0x5676C13: flann::Index<flann::L2_Simple<float> >::Index(flann::Matrix<float> const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, flann::any, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, flann::any> > > const&, flann::L2_Simple<float>) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n1: 329144 0x56775DD: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+      n2: 329144 0x564C4BE: pcl::search::KdTree<pcl::PointXYZ, pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> > >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+       n1: 329144 0x12C5AA: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:62)
+        n1: 329144 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+         n1: 329144 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+          n2: 329144 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+           n1: 329144 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+            n0: 329144 0x11DA81: main (main.cpp:26)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+       n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 164572 0x53F594B: std::vector<int, std::allocator<int> >::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n1: 164572 0x5664C06: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::convertCloudToArray(pcl::PointCloud<pcl::PointXYZ> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n1: 164572 0x567767F: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n2: 164572 0x564C4BE: pcl::search::KdTree<pcl::PointXYZ, pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> > >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n1: 164572 0x12C5AA: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:62)
+      n1: 164572 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+       n1: 164572 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+        n2: 164572 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+         n1: 164572 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+          n0: 164572 0x11DA81: main (main.cpp:26)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 161755 in 291 places, all below massif's threshold (1.00%)
+ n1: 121680 0x8E46DC1: __new_exitfn (cxa_atexit.c:114)
+  n1: 121680 0x8E46FA6: __internal_atexit (cxa_atexit.c:44)
+   n1: 121680 0x8E46FA6: __cxa_atexit (cxa_atexit.c:70)
+    n0: 121680 in 71 places, all below massif's threshold (1.00%)
+ n1: 72704 0x8B56C19: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B89: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011C90: call_init (dl-init.c:30)
+    n1: 72704 0x4011C90: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x2: ???
+       n1: 72704 0x1FFF000102: ???
+        n1: 72704 0x1FFF000113: ???
+         n0: 72704 0x1FFF000139: ???
+#-----------
+snapshot=47
+#-----------
+time=677170989312
+mem_heap_B=10234463
+mem_heap_extra_B=43089
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=695212069313
+mem_heap_B=11306150
+mem_heap_extra_B=43938
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=714757657354
+mem_heap_B=11793495
+mem_heap_extra_B=43049
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=715509348738
+mem_heap_B=5947587
+mem_heap_extra_B=42285
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=716261046078
+mem_heap_B=9471082
+mem_heap_extra_B=44150
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=717012737449
+mem_heap_B=11432386
+mem_heap_extra_B=43918
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=717764428976
+mem_heap_B=11430542
+mem_heap_extra_B=43954
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=718516120379
+mem_heap_B=11141399
+mem_heap_extra_B=43089
+mem_stacks_B=0
+heap_tree=detailed
+n10: 11141399 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n5: 8200184 0x11F23B: Eigen::internal::aligned_malloc(unsigned long) (Memory.h:159)
+  n1: 4785552 0x13EBE6: Eigen::aligned_allocator<pcl::PointXYZ>::allocate(unsigned long, void const*) (Memory.h:758)
+   n1: 4785552 0x13A533: std::allocator_traits<Eigen::aligned_allocator<pcl::PointXYZ> >::allocate(Eigen::aligned_allocator<pcl::PointXYZ>&, unsigned long) (alloc_traits.h:306)
+    n2: 4785552 0x1346F9: std::_Vector_base<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::_M_allocate(unsigned long) (stl_vector.h:343)
+     n1: 3397616 0x12E807: std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::_M_default_append(unsigned long) (vector.tcc:635)
+      n2: 3397616 0x127AF2: std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::resize(unsigned long) (stl_vector.h:937)
+       n1: 3296464 0x12B0DF: void pcl::fromPCLPointCloud2<pcl::PointXYZ>(pcl::PCLPointCloud2 const&, pcl::PointCloud<pcl::PointXYZ>&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > const&) (conversions.h:179)
+        n1: 3296464 0x1259FC: void pcl::fromPCLPointCloud2<pcl::PointXYZ>(pcl::PCLPointCloud2 const&, pcl::PointCloud<pcl::PointXYZ>&) (conversions.h:233)
+         n1: 3296464 0x12E6C0: int pcl::PCDReader::read<pcl::PointXYZ>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, pcl::PointCloud<pcl::PointXYZ>&, int) (pcd_io.h:284)
+          n2: 3296464 0x127A59: int pcl::io::loadPCDFile<pcl::PointXYZ>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, pcl::PointCloud<pcl::PointXYZ>&) (pcd_io.h:652)
+           n0: 3290960 0x11D8BA: main (main.cpp:11)
+           n0: 5504 in 1 place, below massif's threshold (1.00%)
+       n0: 101152 in 1 place, below massif's threshold (1.00%)
+     n1: 1387936 0x13CA2C: void std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::_M_range_insert<__gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > > >(__gnu_cxx::__normal_iterator<pcl::PointXYZ*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, std::forward_iterator_tag) (vector.tcc:769)
+      n1: 1387936 0x138B76: void std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::_M_insert_dispatch<__gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > > >(__gnu_cxx::__normal_iterator<pcl::PointXYZ*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, std::__false_type) (stl_vector.h:1662)
+       n1: 1387936 0x13271B: __gnu_cxx::__normal_iterator<pcl::PointXYZ*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > > std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::insert<__gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, void>(__gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >, __gnu_cxx::__normal_iterator<pcl::PointXYZ const*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >) (stl_vector.h:1380)
+        n1: 1387936 0x12BB28: pcl::PointCloud<pcl::PointXYZ>::concatenate(pcl::PointCloud<pcl::PointXYZ>&, pcl::PointCloud<pcl::PointXYZ> const&) (point_cloud.h:247)
+         n1: 1387936 0x12631E: pcl::PointCloud<pcl::PointXYZ>::operator+=(pcl::PointCloud<pcl::PointXYZ> const&) (point_cloud.h:224)
+          n1: 1387936 0x122829: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:67)
+           n0: 1387936 0x11DA81: main (main.cpp:26)
+  n1: 1389184 0x1410FA: Eigen::aligned_allocator<pcl::PointXYZI>::allocate(unsigned long, void const*) (Memory.h:758)
+   n1: 1389184 0x13DA93: std::allocator_traits<Eigen::aligned_allocator<pcl::PointXYZI> >::allocate(Eigen::aligned_allocator<pcl::PointXYZI>&, unsigned long) (alloc_traits.h:306)
+    n2: 1389184 0x139661: std::_Vector_base<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::_M_allocate(unsigned long) (stl_vector.h:343)
+     n2: 1389184 0x14FCFA: std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::reserve(unsigned long) (vector.tcc:78)
+      n1: 1389184 0x14E8FA: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::detectKeypoints(pcl::PointCloud<pcl::PointXYZI>&) (harris_3d.hpp:245)
+       n1: 1389184 0x12696E: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:138)
+        n2: 1389184 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+         n1: 1389184 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+          n0: 1389184 0x11DA81: main (main.cpp:26)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 1389184 0x141460: Eigen::aligned_allocator<pcl::Normal>::allocate(unsigned long, void const*) (Memory.h:758)
+   n1: 1389184 0x13E027: std::allocator_traits<Eigen::aligned_allocator<pcl::Normal> >::allocate(Eigen::aligned_allocator<pcl::Normal>&, unsigned long) (alloc_traits.h:306)
+    n1: 1389184 0x139A47: std::_Vector_base<pcl::Normal, Eigen::aligned_allocator<pcl::Normal> >::_M_allocate(unsigned long) (stl_vector.h:343)
+     n1: 1389184 0x1337E7: std::vector<pcl::Normal, Eigen::aligned_allocator<pcl::Normal> >::_M_default_append(unsigned long) (vector.tcc:635)
+      n1: 1389184 0x12D2EC: std::vector<pcl::Normal, Eigen::aligned_allocator<pcl::Normal> >::resize(unsigned long) (stl_vector.h:937)
+       n2: 1389184 0x126E40: pcl::Feature<pcl::PointXYZ, pcl::Normal>::compute(pcl::PointCloud<pcl::Normal>&) (feature.hpp:206)
+        n1: 1389184 0x14E5B8: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:218)
+         n1: 1389184 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+          n2: 1389184 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+           n1: 1389184 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+            n0: 1389184 0x11DA81: main (main.cpp:26)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n1: 634392 0x14178A: Eigen::aligned_allocator<pcl::FPFHSignature33>::allocate(unsigned long, void const*) (Memory.h:758)
+   n1: 634392 0x13E511: std::allocator_traits<Eigen::aligned_allocator<pcl::FPFHSignature33> >::allocate(Eigen::aligned_allocator<pcl::FPFHSignature33>&, unsigned long) (alloc_traits.h:306)
+    n1: 634392 0x139DF9: std::_Vector_base<pcl::FPFHSignature33, Eigen::aligned_allocator<pcl::FPFHSignature33> >::_M_allocate(unsigned long) (stl_vector.h:343)
+     n1: 634392 0x133D80: std::vector<pcl::FPFHSignature33, Eigen::aligned_allocator<pcl::FPFHSignature33> >::_M_default_append(unsigned long) (vector.tcc:635)
+      n1: 634392 0x12DB0A: std::vector<pcl::FPFHSignature33, Eigen::aligned_allocator<pcl::FPFHSignature33> >::resize(unsigned long) (stl_vector.h:937)
+       n1: 634392 0x1272C2: pcl::Feature<pcl::PointXYZ, pcl::FPFHSignature33>::compute(pcl::PointCloud<pcl::FPFHSignature33>&) (feature.hpp:206)
+        n1: 634392 0x12316C: mapReuse::descFPFH(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:228)
+         n1: 634392 0x123912: mapReuse::setMap(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> > const&) (mapReuse.h:330)
+          n0: 634392 0x11D921: main (main.cpp:17)
+  n0: 1872 in 2 places, all below massif's threshold (1.00%)
+ n1: 520944 0x5664BAB: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::convertCloudToArray(pcl::PointCloud<pcl::PointXYZ> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n1: 520944 0x567767F: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n2: 520944 0x564C4BE: pcl::search::KdTree<pcl::PointXYZ, pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> > >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n1: 520944 0x12C5AA: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:62)
+     n1: 520944 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+      n1: 520944 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+       n2: 520944 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+        n1: 520944 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+         n0: 520944 0x11DA81: main (main.cpp:26)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 520944 0x5683501: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::buildIndexImpl() (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n1: 520944 0x5675132: flann::NNIndex<flann::L2_Simple<float> >::buildIndex() (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n1: 520944 0x5677659: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n2: 520944 0x564C4BE: pcl::search::KdTree<pcl::PointXYZ, pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> > >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n1: 520944 0x12C5AA: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:62)
+      n1: 520944 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+       n1: 520944 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+        n2: 520944 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+         n1: 520944 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+          n0: 520944 0x11DA81: main (main.cpp:26)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 483328 0x55D4CBE: flann::PooledAllocator::allocateMemory(int) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n3: 483328 0x567AE6A: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n3: 278528 0x567B331: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n1: 155648 0x567B26F: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n0: 155648 in 2 places, all below massif's threshold (1.00%)
+    n1: 122880 0x567B331: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n0: 122880 in 3 places, all below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+   n2: 196608 0x567B26F: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n1: 122880 0x567B26F: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::divideTree(int, int, std::vector<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval, std::allocator<flann::KDTreeSingleIndex<flann::L2_Simple<float> >::Interval> >&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n0: 122880 in 2 places, all below massif's threshold (1.00%)
+    n0: 73728 in 1 place, below massif's threshold (1.00%)
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n2: 347296 0x51CA4D0: std::vector<int, std::allocator<int> >::_M_default_append(unsigned long) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n2: 173648 0x5655DBC: pcl::PCLBase<pcl::PointXYZ>::initCompute() (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n1: 173648 0x12C479: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:45)
+    n1: 173648 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+     n1: 173648 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+      n2: 173648 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+       n1: 173648 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+        n0: 173648 0x11DA81: main (main.cpp:26)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 3 places, all below massif's threshold (1.00%)
+  n1: 173648 0x56835E1: flann::KDTreeSingleIndex<flann::L2_Simple<float> >::buildIndexImpl() (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n1: 173648 0x5675132: flann::NNIndex<flann::L2_Simple<float> >::buildIndex() (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n1: 173648 0x5677659: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n2: 173648 0x564C4BE: pcl::search::KdTree<pcl::PointXYZ, pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> > >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+      n1: 173648 0x12C5AA: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:62)
+       n1: 173648 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+        n1: 173648 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+         n2: 173648 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+          n1: 173648 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+           n0: 173648 0x11DA81: main (main.cpp:26)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+      n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 347296 0x55EB2C0: std::vector<float*, std::allocator<float*> >::_M_default_append(unsigned long) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n1: 347296 0x56752A6: flann::NNIndex<flann::L2_Simple<float> >::setDataset(flann::Matrix<float> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n1: 347296 0x56765F0: flann::NNIndex<flann::L2_Simple<float> >* flann::create_index_by_type<flann::L2_Simple<float> >(flann::flann_algorithm_t, flann::Matrix<flann::L2_Simple<float>::ElementType> const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, flann::any, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, flann::any> > > const&, flann::L2_Simple<float> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n1: 347296 0x5676C13: flann::Index<flann::L2_Simple<float> >::Index(flann::Matrix<float> const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, flann::any, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, flann::any> > > const&, flann::L2_Simple<float>) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n1: 347296 0x56775DD: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+      n2: 347296 0x564C4BE: pcl::search::KdTree<pcl::PointXYZ, pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> > >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+       n1: 347296 0x12C5AA: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:62)
+        n1: 347296 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+         n1: 347296 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+          n2: 347296 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+           n1: 347296 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+            n0: 347296 0x11DA81: main (main.cpp:26)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+       n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 252431 in 290 places, all below massif's threshold (1.00%)
+ n1: 173648 0x137053: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:114)
+  n1: 173648 0x1306EA: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (alloc_traits.h:444)
+   n1: 173648 0x129FE3: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:343)
+    n1: 173648 0x125602: std::vector<int, std::allocator<int> >::reserve(unsigned long) (vector.tcc:78)
+     n1: 173648 0x12C7E1: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:122)
+      n1: 173648 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+       n1: 173648 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+        n2: 173648 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+         n1: 173648 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+          n0: 173648 0x11DA81: main (main.cpp:26)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 173648 0x53F594B: std::vector<int, std::allocator<int> >::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+  n1: 173648 0x5664C06: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::convertCloudToArray(pcl::PointCloud<pcl::PointXYZ> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+   n1: 173648 0x567767F: pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+    n2: 173648 0x564C4BE: pcl::search::KdTree<pcl::PointXYZ, pcl::KdTreeFLANN<pcl::PointXYZ, flann::L2_Simple<float> > >::setInputCloud(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> const> const&, boost::shared_ptr<std::vector<int, std::allocator<int> > const> const&) (in /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so.1.10.0)
+     n1: 173648 0x12C5AA: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::initCompute() (keypoint.hpp:62)
+      n1: 173648 0x14E3E6: pcl::HarrisKeypoint3D<pcl::PointXYZ, pcl::PointXYZI, pcl::Normal>::initCompute() (harris_3d.hpp:197)
+       n1: 173648 0x12691A: pcl::Keypoint<pcl::PointXYZ, pcl::PointXYZI>::compute(pcl::PointCloud<pcl::PointXYZI>&) (keypoint.hpp:131)
+        n2: 173648 0x122DE0: mapReuse::harrisKP(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:138)
+         n1: 173648 0x12285C: mapReuse::getPosition(boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&) (mapReuse.h:68)
+          n0: 173648 0x11DA81: main (main.cpp:26)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 121680 0x8E46DC1: __new_exitfn (cxa_atexit.c:114)
+  n1: 121680 0x8E46FA6: __internal_atexit (cxa_atexit.c:44)
+   n1: 121680 0x8E46FA6: __cxa_atexit (cxa_atexit.c:70)
+    n0: 121680 in 71 places, all below massif's threshold (1.00%)
