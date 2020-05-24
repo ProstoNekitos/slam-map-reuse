@@ -1,0 +1,15 @@
+set xlabel "Number of points"
+set ylabel "Memory consumption"
+
+set title "RAM usage"
+set grid xtics ytics
+set style data linespoints
+
+plot 'FPFH.txt' title "FPFH",\
+     'IS.txt'   title "IS", \
+     'SHOT.txt' title "SHOT",\
+     '3DSC.txt' title "3DSC",
+
+
+
+
